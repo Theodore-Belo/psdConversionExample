@@ -1,0 +1,14 @@
+header.contactHeader {
+    background: url("../assets/contact-image.jpg") $white no-repeat;
+    background-size: cover;
+    @include forSize(belowDesktop) {
+        background-position: 75% 100%;
+    }
+
+    h1 {
+        padding: 200px 0 200px 0;
+        @include forSize(belowTabletLandscape) {
+            padding: 150px 0 250px 0;
+        }
+    }
+}

@@ -1,20 +1,28 @@
 // GENERAL STYLES
-@import "variables";
-@import "setup";
-@import "typography";
-@import "general";
-@import "form";
-@import "hamburgerMenu";
-@import "header";
-@import "footer";
+@import "generalStyles/variables";
+@import "generalStyles/setup";
+@import "generalStyles/typography";
+@import "generalStyles/general";
+@import "generalStyles/hamburgerMenu";
+@import "generalStyles/header";
+@import "generalStyles/footer";
 
 // HOME PAGE
-@import "home";
+@import "homeStyles/homeHeader";
+@import "homeStyles/homeMain";
+
 
 // BLOG PAGE
-@import "blog";
+@import "blogStyles/blogHeader";
+@import "blogStyles/blogMain";
+@import "blogStyles/blogAside";
+@import "blogStyles/blogComments";
+
+
 
 // CONTACT PAGE
-@import "contact";
+@import "contactStyles/contactHeader";
+@import "contactStyles/contactMain";
+@import "contactStyles/contactForm";
 
 

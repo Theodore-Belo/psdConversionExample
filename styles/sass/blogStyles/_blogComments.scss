@@ -1,0 +1,49 @@
+.commentSection {
+    background: $ice;
+
+    h2 {
+        padding: 50px 0 50px 0;
+    }
+
+    .comments {
+        width: 60%;
+        padding-bottom: 75px;
+        @include forSize(belowTabletLandscape) {
+            width: 100%;
+        }
+        @include forSize(belowPhone) {
+            flex-direction: column; 
+        }
+
+        .imageContainer {
+            flex: 1 0 20%;
+            @include forSize(belowPhone) {
+                margin-bottom: 20px;
+            }
+        }
+
+        p.bold {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.postSection {
+    background: $ice;
+
+    form {
+        width: 60%;
+        @include forSize(belowTabletLandscape) {
+            width: 100%;
+        }
+
+        input:not([type=submit]) {
+            border-bottom: 2px solid $evergreen;
+            background: $ice;
+        }
+
+        textarea {
+            background: $ice;
+        }
+    }
+}

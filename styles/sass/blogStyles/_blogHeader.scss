@@ -1,0 +1,14 @@
+header.blogHeader {
+    background: url("../assets/blog-image.jpg") $white no-repeat;
+    background-size: cover;
+    @include forSize(belowTabletLandscape) {
+        background-position: bottom center;
+    }
+    @include forSize(belowPhone) {
+        background-position: 40% 100%;
+    }
+
+    h1 {
+        padding: 200px 0 200px 0;
+    }
+}

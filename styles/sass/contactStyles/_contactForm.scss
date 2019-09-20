@@ -1,8 +1,24 @@
+.contactForm {
+    background: white;
+    box-shadow: 20px 20px $brightYellow;
+    flex: 0 1 60%;
+    padding: 70px 50px 0px 50px;
+    position: relative;
+    top: -100px;
+    @include forSize(belowTabletLandscape) {
+        flex-direction: column;
+        width: 90%;
+    }
+    @include forSize(belowPhone) {
+        padding: 50px 20px 0px 20px;
+    }
+}   
+
 form {
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    @include forSize(belowPhone) {
+    @include forSize(belowTabletLandscape) {
         .nameEntry {
             margin-bottom: 75px;
         }
@@ -12,6 +28,9 @@ form {
     .emailEntry {
         flex: 0 1 48%;
         position: relative;
+        @include forSize(belowTabletLandscape) {
+            flex: 0 1 100%;
+        }  
         @include forSize(belowPhone) {
             flex: 0 1 100%;
         } 
@@ -27,6 +46,7 @@ form {
         input {
             width: 100%;
             border: none;
+            border-bottom: 2px solid $black;
         }
     }
 

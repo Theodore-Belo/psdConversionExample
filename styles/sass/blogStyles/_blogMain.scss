@@ -1,0 +1,42 @@
+.flexContainer {
+    background: $ice;
+    justify-content: space-between;
+    @include forSize(belowTabletLandscape) {
+        flex-direction: column;
+    }
+    .blogArea {
+        background: $white;
+        flex: 0 0 60%;
+        position: relative;
+        top: -70px;
+        @include forSize(belowTabletLandscape) {
+            position: static;
+        }
+
+        img {
+            box-shadow: 20px 20px $brightYellow;
+            width: 100%;
+            position: relative;
+            top: -20px;
+            left: -20px;
+
+            @include forSize(belowTabletLandscape) {
+                position: static;
+                box-shadow:none;
+                outline-style: solid;
+                outline-color: $brightYellow;
+                outline-width: 10px;
+            }
+        }
+
+        .blogPost {
+            padding: 50px 0 50px 100px;
+            border-right: 10px solid $brightYellow;
+            border-bottom: 10px solid $brightYellow;
+
+            @include forSize(belowDesktop) {
+                padding: 50px 0 50px 50px;
+            }
+        }
+    }
+}

@@ -372,103 +372,6 @@ nav a:focus::after {
   background-color: #f8fb05;
 }
 
-form {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-}
-
-@media (max-width: 599px) {
-  form .nameEntry {
-    margin-bottom: 75px;
-  }
-}
-
-form .nameEntry,
-form .emailEntry {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 48%;
-          flex: 0 1 48%;
-  position: relative;
-}
-
-@media (max-width: 599px) {
-  form .nameEntry,
-  form .emailEntry {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-  }
-}
-
-form .nameEntry label,
-form .emailEntry label {
-  position: absolute;
-  top: -30px;
-  left: 20px;
-  text-transform: uppercase;
-}
-
-form .nameEntry input,
-form .emailEntry input {
-  width: 100%;
-  border: none;
-}
-
-form textarea {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
-  margin-top: 50px;
-  resize: none;
-  border: 2px solid #151514;
-  padding: 25px;
-}
-
-form textarea::-webkit-input-placeholder {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
-form textarea:-ms-input-placeholder {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
-form textarea::-ms-input-placeholder {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
-form textarea::placeholder {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
-form input[type=submit] {
-  width: 100%;
-  margin: 50px 0 50px 0;
-}
-
-.labelHelper {
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: .2s;
-  transition: .2s;
-  bottom: 85%;
-  left: 0;
-  z-index: 1;
-  text-transform: uppercase;
-}
-
-.inputText:focus + .labelHelper {
-  opacity: 1;
-  padding: 4px;
-}
-
 .container {
   display: none;
   position: relative;
@@ -1427,54 +1330,6 @@ main {
   }
 }
 
-.contactForm {
-  background: white;
-  -webkit-box-shadow: 20px 20px #f8fb05;
-          box-shadow: 20px 20px #f8fb05;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 60%;
-          flex: 0 1 60%;
-  padding: 70px 50px 0px 50px;
-  position: relative;
-  top: -100px;
-}
-
-@media (max-width: 900px) {
-  .contactForm {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 90%;
-  }
-}
-
-@media (max-width: 599px) {
-  .contactForm {
-    padding: 50px 20px 0px 20px;
-  }
-}
-
-@media (max-width: 900px) {
-  .contactForm form .nameEntry,
-  .contactForm form .emailEntry {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-  }
-}
-
-.contactForm form .nameEntry input,
-.contactForm form .emailEntry input {
-  border-bottom: 2px solid #151514;
-}
-
-@media (max-width: 900px) {
-  .contactForm form .nameEntry {
-    margin-bottom: 75px;
-  }
-}
-
 .contactInfo {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1507,4 +1362,139 @@ main {
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
+}
+
+.contactForm {
+  background: white;
+  -webkit-box-shadow: 20px 20px #f8fb05;
+          box-shadow: 20px 20px #f8fb05;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  padding: 70px 50px 0px 50px;
+  position: relative;
+  top: -100px;
+}
+
+@media (max-width: 900px) {
+  .contactForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: 599px) {
+  .contactForm {
+    padding: 50px 20px 0px 20px;
+  }
+}
+
+form {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  form .nameEntry {
+    margin-bottom: 75px;
+  }
+}
+
+form .nameEntry,
+form .emailEntry {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  form .nameEntry,
+  form .emailEntry {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+@media (max-width: 599px) {
+  form .nameEntry,
+  form .emailEntry {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+form .nameEntry label,
+form .emailEntry label {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  text-transform: uppercase;
+}
+
+form .nameEntry input,
+form .emailEntry input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #151514;
+}
+
+form textarea {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  margin-top: 50px;
+  resize: none;
+  border: 2px solid #151514;
+  padding: 25px;
+}
+
+form textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+form textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+form textarea::-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+form textarea::placeholder {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+form input[type=submit] {
+  width: 100%;
+  margin: 50px 0 50px 0;
+}
+
+.labelHelper {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+  bottom: 85%;
+  left: 0;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.inputText:focus + .labelHelper {
+  opacity: 1;
+  padding: 4px;
 }
