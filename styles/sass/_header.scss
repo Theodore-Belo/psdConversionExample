@@ -1,0 +1,35 @@
+header {
+    nav {
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        @include forSize(belowTabletPortrait) {
+            padding-top: 10px;
+        }
+
+        ul {
+            width: 40%;
+            justify-content: space-between;
+            @include forSize(belowDesktop) {
+                width: 50%;
+            }
+            @include forSize(belowTabletLandscape) {
+                width: 60%;
+            }
+            @include forSize(belowTabletPortrait) {
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
+    }
+    nav.flex {
+        @include forSize(belowPhone) {
+            display: none;
+        }
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+}
+

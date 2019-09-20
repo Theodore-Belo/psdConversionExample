@@ -1,0 +1,55 @@
+.lineBreak {
+    display: block;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: $evergreen;
+    color: $white;
+    padding: 10px 20px;
+}
+
+.skipLink:focus {
+    left: 50px;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    width: 95%;
+    height: 3px;
+    position: absolute;
+    left: 2.5%;
+    bottom: -3px;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+    background-color: $brightYellow;
+}
+

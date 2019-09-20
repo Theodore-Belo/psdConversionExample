@@ -1,0 +1,27 @@
+// --- FONT FAMILY VARIABLES
+$kumarOutline: 'Kumar One Outline', cursive;
+$kumarOne: 'Kumar One', cursive;
+$lato: 'Lato', sans-serif;
+
+// --- COLOR VARIABLES
+$brightYellow: #f8fb05;
+$evergreen: #065635;
+$white: #f5f5f5;
+$ice: #e0fddf;
+$black: #151514;
+
+// --- MIXINS
+// https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
+@mixin forSize($size) {
+  @if $size == belowPhone {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == belowTabletPortrait {
+    @media (max-width: 768px) { @content; }
+  } @else if $size == belowTabletLandscape {
+    @media (max-width: 900px) { @content; }
+  } @else if $size == belowDesktop {
+    @media (max-width: 1200px) { @content; }
+  } @else if $size == bigDesktopUp {
+    @media (min-width: 1800px) { @content; }
+  }
+}

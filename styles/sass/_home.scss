@@ -1,0 +1,245 @@
+header.homeHeader {
+    background: url("../assets/header-home.jpg") $white no-repeat;
+    background-size: contain;
+    @include forSize(belowTabletPortrait) {
+            background-position: right bottom;
+            background-size: cover;
+    }
+    @include forSize(belowPhone) {
+            background-position: center bottom;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+    nav.flex {
+        padding-top: 10px;
+    }
+
+    h1 {
+        margin: 50px 0 0 175px;
+        @include forSize(belowDesktop) {
+            margin: 50px 0 0 200px;
+            font-size: 2.4rem;
+        }
+        @include forSize(belowTabletLandscape) {
+            margin: 0;
+            padding: 20px 0 250px 20%;
+            font-size: 2.2rem;
+        }
+        @include forSize(belowTabletPortrait) {
+            padding: 20px 0 275px 15%;
+        }
+        @include forSize(belowPhone) {
+            padding: 20px 0 275px 5%;
+        }
+    }
+    img {
+        margin-top: 40px;
+        width: 55%;
+        @include forSize(belowDesktop) {
+            margin-top: 0px;
+        }
+        @include forSize(belowTabletLandscape) {
+            display: none;
+        }
+    }
+}
+
+.about {
+    background: $white;
+    padding-top:100px;
+    .flex {
+        flex-direction: row-reverse;
+        @include forSize(belowDesktop) {
+            flex-direction: column;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    }
+} 
+.description {
+    width: 75%;
+    padding-right: 50px;
+    margin-bottom: 100px;
+    @include forSize(belowDesktop) {
+        padding-right: 0;
+    }
+
+    p {
+        padding: 20px 0 30px;
+    }
+}
+
+.image {
+    width: 25%;
+    @include forSize(belowDesktop) {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        box-shadow: -20px 20px $brightYellow;
+        display: block;
+    }
+    @include forSize(belowDesktop) {
+        margin-bottom: 50px;
+        width: 50%;
+    }
+}
+
+.gallery {
+    padding: 100px 0;
+    background: $ice;
+
+    .flex {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @include forSize(belowTabletLandscape) {
+            img:nth-child(-n+2) {
+                margin-bottom: 40px;
+            }
+        }
+
+        img {
+            width: 31%;
+            @include forSize(belowTabletLandscape) {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.moreInfo {
+    background: $white;
+    padding: 100px 0 75px;
+
+    .flex {
+        flex-wrap: wrap;
+    }
+}
+
+.moreInfoCaption {
+    width: 50%;
+    display: flex;
+    margin-bottom: 50px;
+    @include forSize(belowTabletLandscape) {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    i {
+        background: $brightYellow;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .info {
+        padding: 0 10px;
+    }
+
+}
+
+.blogSection {
+    background: $ice;
+}
+
+.largeScreen {
+    justify-content: space-between;
+    max-width: 1700px;
+    margin: 0 auto;
+    @include forSize(belowDesktop) {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 45%;
+        @include forSize(belowDesktop) {
+            width: 100%;
+        }
+    }
+
+    .left {
+        text-align: right;
+        @include forSize(belowDesktop) {
+            padding-right: 100px;
+        }
+        @include forSize(belowPhone) {
+            padding-right: 20px;
+        }
+
+        img {
+            box-shadow: 20px 20px $brightYellow;
+            position: relative;
+            top: -30px;
+        }
+    }
+}
+
+
+.blogItem {
+    padding: 40px 0 40px 40px;
+
+    p {
+        padding: 20px 0 40px 0;
+    }
+}
+
+
+.right {
+    @include forSize(belowDesktop) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 100px; 
+    }
+    @include forSize(belowPhone) {
+        padding-left: 20px;
+    }
+    img {
+        box-shadow: -20px 20px $brightYellow;
+        position: relative;
+        bottom: -40px;
+        @include forSize(belowDesktop) {
+            position: static; 
+        }
+        
+        
+        
+    }
+
+    .blogItem {
+        padding: 40px 40px 40px 0;
+
+        p {
+            padding: 20px 40px 40px 0px;
+        }
+    }
+}
+
+
+.banner {
+    background: url("../assets/banner-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    @include forSize(belowDesktop) {
+        background-position: 45% 100%;
+    }
+}
+
+.search {
+    background: $white;
+    text-align: center;
+    padding: 200px;
+    @include forSize(belowTabletLandscape) {
+        padding: 100px;
+    }
+    @include forSize(belowPhone) {
+        padding: 25px;
+    }
+
+    p {
+        text-align: left;
+        padding: 25px 0 50px;
+    }
+}

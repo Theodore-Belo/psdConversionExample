@@ -1,0 +1,8 @@
+CSS for Mixins was found on https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
+
+Favicon found at https://imgbin.com/download-png/8TYv9XJ7 and converted with https://www.favicon-generator.org/
+
+Awesome Hamburger Menu code was adapted from:
+https://scotch.io/tutorials/building-a-morphing-hamburger-menu-with-css
+
+THANKS FOR THE INSPO!!!!

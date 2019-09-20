@@ -1,0 +1,82 @@
+// Import font-family and color variables
+@import "variables";
+
+h1 {
+    font-family: $kumarOutline;
+    font-size: 3.4rem;
+    line-height: 3.2rem;
+}
+
+h2,
+h3,
+.button {
+    font-family: $kumarOne;
+}
+
+nav,
+.button,
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.65rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.105rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.06rem;
+    text-align: left;
+}
+
+nav,
+p,
+label,
+textarea {
+    font-family: $lato;
+    font-size: 1rem;
+}
+
+nav,
+.button {
+    text-align: center;
+}
+
+nav {
+    line-height: 1.45rem;
+    letter-spacing: 0.07rem;
+    font-weight: 700;
+}
+
+.button,
+p {
+    line-height: 1.6rem;
+}
+
+.button {
+    letter-spacing: 0.05rem;
+    background: $evergreen;
+    color: white;
+    padding: 10px 20px 5px;
+}
+
+.button:hover {
+    color: $brightYellow;
+}
+
+.button:focus {
+    border: 2px solid $brightYellow;
+}
+
+p {
+    letter-spacing: 0.1rem;
+}
+
+a {
+    color: $black;
+}

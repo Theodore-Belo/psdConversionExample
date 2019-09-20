@@ -1,0 +1,65 @@
+form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    @include forSize(belowPhone) {
+        .nameEntry {
+            margin-bottom: 75px;
+        }
+    } 
+
+    .nameEntry,
+    .emailEntry {
+        flex: 0 1 48%;
+        position: relative;
+        @include forSize(belowPhone) {
+            flex: 0 1 100%;
+        } 
+
+
+        label {
+            position: absolute;
+            top: -30px;
+            left: 20px;
+            text-transform: uppercase;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+        }
+    }
+
+    textarea {
+        flex: 1 0 100%;
+        margin-top: 50px;
+        resize: none;
+        border: 2px solid $black;
+        padding: 25px;
+    }
+
+    textarea::placeholder {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        margin: 50px 0 50px 0;
+    }
+}
+
+.labelHelper {
+  position: absolute;
+  opacity: 0;
+  transition: .2s;
+  bottom: 85%;
+  left: 0;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.inputText:focus + .labelHelper {
+    opacity: 1;
+    padding: 4px;
+}
